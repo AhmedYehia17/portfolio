@@ -241,6 +241,101 @@
 }
 
 /*Features End*/
+/*Projects Start*/
+.projects{
+    width: 100%;
+    height: fit-content;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px 10px 100px;
+
+}
+.projects .container{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding-top: 60px;
+}
+.projects .container .projects-title{
+    width: fit-content;
+    font-weight: 600;
+    position: relative;
+    font-size: 25px;
+}
+.projects .container .projects-title::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #cdcbcb;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    margin-top: 30px;
+}
+.project{
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.project:hover .project-text{
+    bottom: 0;
+}
+.img-container{
+    width: 100%;
+    height: 100%;    
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+.project .project-text{
+    position: absolute;
+    bottom: -200px;
+    background-color: #f1eeee;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.project-title{
+    font-size: 20px;
+    color: #000
+}
+.projectDescription{
+    color: #000;
+}
+.projectLink{
+    width: fit-content;
+    font-weight: 600;
+    position: relative;
+    font-size: 23px;
+    text-decoration: none;
+    color: #000
+}
+.projectLink::after{
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #646464;
+}
+/*Projects End*/
 /*Contact Start*/
 .contact {
     width: 100%;
@@ -454,6 +549,9 @@
     .footer{
         height: 25vh
     }
+    .projects{
+        padding: 50px;
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .header i {
@@ -540,6 +638,9 @@
     }
     .footer{
         height: 25vh
+    }
+    .projects{
+        padding: 50px;
     }
 }
 @media (min-width: 1025px) and (max-width: 1440px){
