@@ -451,6 +451,9 @@
         grid-column-gap: 35px;
         margin-top: 40px;
     }
+    .footer{
+        height: 25vh
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .header i {
@@ -534,6 +537,9 @@
         grid-row-gap: 50px;
         grid-column-gap: 35px;
         margin-top: 40px;
+    }
+    .footer{
+        height: 25vh
     }
 }
 @media (min-width: 1025px) and (max-width: 1440px){
