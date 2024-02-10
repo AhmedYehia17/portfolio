@@ -241,6 +241,129 @@
 }
 
 /*Features End*/
+/*Contact Start*/
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.contact .container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 20px;
+}
+
+.contact .container .contact-title {
+    width: fit-content;
+    font-weight: 600;
+    position: relative;
+}
+
+.contact .container .contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #cdcbcb;
+}
+
+.contact .container .inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-row-gap: 60px;
+    grid-column-gap: 50px;
+    margin-top: 40px;
+}
+
+.contact .container .inputs input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0000006b;
+    outline: none;
+}
+
+.contact .container .inputs .message {
+    grid-column: 1 / -1;
+    padding-bottom: 60px;
+}
+
+.contact .container button {
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+}
+
+.contact .container button::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #cdcbcb;
+}
+/*Contact End*/
+/*Footer Start*/
+.footer {
+    position: relative;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .container .social {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.footer .container .social a {
+    border: 1px solid rgba(0, 0, 0, 0.403);
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.footer .container .social a:hover {
+    border: 1px solid #000;
+}
+
+.footer .container p {
+    font-size: 15px;
+    color: #00000064;
+}
+/*Footer End*/
 @media screen and (max-width: 768px) {
     .header i {
         display: block;
@@ -321,6 +444,13 @@
     .features .container .features-cards .card .card-text{
         max-width: 80%;
     }
+    .contact .container .inputs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-row-gap: 50px;
+        grid-column-gap: 35px;
+        margin-top: 40px;
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .header i {
@@ -398,6 +528,13 @@
     .about .container .about-text .resume{
         font-size: 22px;
     }
+    .contact .container .inputs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-row-gap: 50px;
+        grid-column-gap: 35px;
+        margin-top: 40px;
+    }
 }
 @media (min-width: 1025px) and (max-width: 1440px){
     .header {
@@ -452,7 +589,6 @@
         width: 100%;
         background-color: transparent;
         z-index: 10;
-        /* border-bottom: 1px solid red; */
     }
     
     .logo {
@@ -496,14 +632,12 @@
     .features{
         height: 100vh;
         padding: 50px;
-        border: 1px solid red;
     }
     .features .container {
         width: 80%;
         height: fit-content;
         padding-top: 60px;
         position: relative;
-        border: 1px solid red;
     }
 
     .features .container .features-cards {
@@ -514,7 +648,6 @@
         margin-top: 60px;
     }
     .features .container .features-title{
-        border: 1px solid red;
         font-size: 35px;
     }
     .features .container .features-cards .card .icon {
@@ -532,130 +665,34 @@
         font-size: 20px;
         color: #0000007e;
         max-width: 80%;
+    }
+    .contact .container {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 30px;
+    }
+    
+    .contact .container .contact-title {
+        width: fit-content;
+        font-weight: 600;
+        position: relative;
+        font-size: 30px;
+    }
+    .contact .container .inputs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(750px, 1fr));
+        grid-row-gap: 60px;
+        grid-column-gap: 50px;
+        margin-top: 40px;
+    }
+    
+    .contact .container button {
+        border: none;
+        background-color: transparent;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 22px;
+        position: relative;
+    }
 }
-}
-/*Contact Start*/
-/* .contact {
-    width: 100%;
-    height: 100vh;
-    background-color: #eee;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-    padding-bottom: 0;
-}
-
-.contact .container {
-    width: 100%;
-    height: 95%;
-    position: relative;
-    padding: 20px;
-}
-
-.contact .container .contact-title {
-    width: fit-content;
-    font-weight: 600;
-    position: relative;
-}
-
-.contact .container .contact-title::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #cdcbcb;
-}
-
-.contact .container .inputs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-row-gap: 60px;
-    grid-column-gap: 50px;
-    margin-top: 40px;
-}
-
-.contact .container .inputs input {
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #0000006b;
-    outline: none;
-}
-
-.contact .container .inputs .message {
-    grid-column: 1 / -1;
-    padding-bottom: 60px;
-}
-
-.contact .container button {
-    border: none;
-    background-color: transparent;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 15px;
-    position: relative;
-}
-
-.contact .container button::after {
-    content: '';
-    position: absolute;
-    bottom: 1px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #cdcbcb;
-} */
-
-/*Contact End*/
-/*Footer Start*/
-/* .footer {
-    position: relative;
-    background-color: #f6f6f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 40vh;
-}
-
-.footer .container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
-}
-
-.footer .container .social {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.footer .container .social a {
-    border: 1px solid rgba(0, 0, 0, 0.403);
-    width: 40px;
-    height: 40px;
-    text-decoration: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-    color: #000;
-    transition: 0.3s;
-}
-
-.footer .container .social a:hover {
-    border: 1px solid #000;
-}
-
-.footer .container p {
-    font-size: 15px;
-    color: #00000064;
-} */
-
-/*Footer End*/
