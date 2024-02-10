@@ -182,6 +182,65 @@
 }
 
 /*About section End*/
+/*what I do start*/
+.features {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 60px 10px 100px;
+}
+
+.features .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    position: relative;
+}
+
+.features .container .features-title {
+    font-weight: 600;
+    position: relative;
+    width: fit-content;
+}
+
+.features .container .features-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #cdcbcb;
+}
+
+.features .container .features-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-row-gap: 25px;
+    grid-column-gap: 10px;
+    margin-top: 40px;
+}
+
+.features .container .features-cards .card .icon {
+    font-size: 30px;
+    color: #939191;
+}
+
+.features .container .features-cards .card .card-title {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.features .container .features-cards .card .card-text {
+    font-size: 15px;
+    color: #0000007e
+}
+
+/*Features End*/
 @media screen and (max-width: 768px) {
     .header i {
         display: block;
@@ -198,7 +257,7 @@
         position: absolute;
         top: 75px;
         right: -350px;
-        width: 45%;
+        width: 50%;
         padding: 20px 40px;
         text-align: center;
         background-color: #f6f6f6;
@@ -250,14 +309,11 @@
     }
     .about .container .about-text .about-title {
         font-size: 25px;
-        /* border: 1px solid red; */
+        max-width: 80%;
     }
     .about .container .about-text .about-paragraph {
         font-size: 15px;
     }
-    /* .about .container .about-text{
-
-    } */
 }
 @media (min-width: 769px) and (max-width: 1024px){
     .header i {
@@ -274,7 +330,7 @@
         position: absolute;
         top: 100px;
         right: -350px;
-        width: 30%;
+        width: 40%;
         padding: 40px 40px;
         text-align: center;
         background-color: #f6f6f6;
@@ -326,6 +382,7 @@
     }
     .about .container .about-text .about-title {
         font-size: 35px;
+        max-width: 80%;
         /* border: 1px solid red; */
     }
     .about .container .about-text .about-paragraph {
@@ -421,65 +478,6 @@
         font-size: 30px;
     }
 }
-/*what I do start*/
-/* .features {
-    width: 100%;
-    height: 100vh;
-    background-color: #eee;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 60px 10px 100px;
-}
-
-.features .container {
-    width: 100%;
-    height: 100%;
-    padding-top: 60px;
-    position: relative;
-}
-
-.features .container .features-title {
-    font-weight: 600;
-    position: relative;
-    width: fit-content;
-}
-
-.features .container .features-title::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #cdcbcb;
-}
-
-.features .container .features-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-row-gap: 25px;
-    grid-column-gap: 10px;
-    margin-top: 40px;
-}
-
-.features .container .features-cards .card .icon {
-    font-size: 30px;
-    color: #939191;
-}
-
-.features .container .features-cards .card .card-title {
-    font-weight: 400;
-    margin: 5px 0;
-}
-
-.features .container .features-cards .card .card-text {
-    font-size: 15px;
-    color: #0000007e
-} */
-
-/*Features End*/
 /*Contact Start*/
 /* .contact {
     width: 100%;
